@@ -25,4 +25,4 @@ To generate the .box file:
 
 To install locally:
 
-    vagrant box add django-base-v2.2 django-base-v2.2.box
+    vagrant box add django-base django-base.box
