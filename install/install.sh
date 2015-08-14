@@ -44,6 +44,7 @@ apt-get install -y \
     libbz2-dev \
     tk-dev \
     libreadline6-dev \
+    libffi-dev \
     nodejs
 
 easy_install pip
