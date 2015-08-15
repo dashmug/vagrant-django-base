@@ -1,28 +1,18 @@
 vagrant-django-base
 ===================
 
-A Vagrant box based on Ubuntu trusty32, configured for Django development
-according to Torchbox's adopted practices. Things preinstalled beyond the base
-trusty32 box include:
-
-* postgresql 9.3 (with locale fixed to create databases as UTF-8)
-* virtualenv and virtualenvwrapper
-* dependencies for Pillow, a drop-in replacement for the Python Imaging Library PIL
-* a pip download cache pre-seeded with Django and various other common packages
-* git (sometimes required for pip dependencies that aren't in PyPI)
-* Node.js, CoffeeScript and LESS
-
-We use this box in conjunction with https://github.com/torchbox/vagrant-django-template
-as the initial template for our Django projects. vagrant-django-template will
-successfully build from a vanilla trusty32 base box, but using vagrant-django-base
-instead will skip some of the time-consuming initial setup.
+This is my fork of `torchbox/django`. I personally use this as a base box for projects where I need to collaborate with another developer.
 
 Build instructions
 ------------------
-To generate the .box file:
+To generate the `django-base.box` file:
 
-    ./build.sh
+    make
 
-To install locally:
+This generated `django-base.box` file can be easily copied to other computers. This will save a lot of time instead of building the box from scratch.
 
-    vagrant box add django-base django-base.box
+To install on a machine:
+
+    make install
+
+See `Makefile` to see what commands are run in those above commands.
