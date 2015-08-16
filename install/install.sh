@@ -19,8 +19,6 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
 
 curl -sL https://deb.nodesource.com/setup_0.12 | bash -
 
-# apt-get upgrade -y
-
 apt-get install -y \
     python-dev \
     python3-dev \
@@ -46,6 +44,8 @@ apt-get install -y \
     libreadline6-dev \
     libffi-dev \
     nodejs
+
+apt-get upgrade -y
 
 easy_install pip
 pip install pip --upgrade
